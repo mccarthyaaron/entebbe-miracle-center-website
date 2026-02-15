@@ -28,8 +28,24 @@ const Hero = () => {
           A place of healing, restoration, and divine purpose.
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <Button variant="primary">Plan Your Visit</Button>
-          <Button variant="secondary">Watch Live</Button>
+          <a 
+            href="https://www.google.com/maps/place/Entebbe+Miracle+Center" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button variant="primary">
+              Plan Your Visit
+            </Button>
+          </a>
+          <a 
+            href="http://www.youtube.com/@AaronMutebiMinistries" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button variant="secondary">
+              Watch Live
+            </Button>
+          </a>
         </div>
       </div>
 
