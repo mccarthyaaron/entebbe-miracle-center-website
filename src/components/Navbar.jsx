@@ -45,7 +45,18 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <Button variant={isScrolled ? 'primary' : 'primary'} className="py-2 px-6 text-sm">
+          <Button
+            variant={isScrolled ? 'primary' : 'primary'}
+            className="py-2 px-6 text-sm"
+            onClick={() => {
+              const section = document.getElementById('giving');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                window.location.hash = '#giving';
+              }
+            }}
+          >
             Give Now
           </Button>
         </div>
@@ -74,7 +85,19 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-           <Button variant="primary" className="w-full text-center">
+           <Button
+            variant="primary"
+            className="w-full text-center"
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              const section = document.getElementById('giving');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                window.location.hash = '#giving';
+              }
+            }}
+          >
             Give Now
           </Button>
         </div>
