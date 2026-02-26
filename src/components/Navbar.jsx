@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className={`text-2xl font-serif font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>
-          Entebbe<span className="text-accent">Miracle</span>Center
+          Entebbe Miracle Center Church
         </a>
 
         {/* Desktop Menu */}
