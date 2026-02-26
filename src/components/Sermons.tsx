@@ -44,9 +44,9 @@ const Sermons = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {sermons.map((sermon) => (
+          {sermons.map((sermon, index) => (
             <article
-              key={sermon.title}
+              key={`${sermon.title}-${index}`}
               className="bg-secondary rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
             >
               <div className="relative h-52 overflow-hidden">

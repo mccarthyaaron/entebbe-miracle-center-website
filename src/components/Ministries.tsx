@@ -55,7 +55,7 @@ const Ministries = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ministries.map((ministry, index) => (
             <article
-              key={ministry.title}
+              key={`${ministry.title}-${index}`}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
             >
               <div className="relative h-48 overflow-hidden">

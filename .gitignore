@@ -12,9 +12,52 @@ dist
 dist-ssr
 *.local
 
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env*.example
+!.env.sample
+!.env*.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.csr
+*.der
+*.jks
+*.keystore
+*.kdbx
+secrets/
+secret/
+private/
+*.secret
+*.secrets
+*.credentials
+credentials.json
+service-account*.json
+firebase-adminsdk*.json
+
+# Local config/state files
+.npmrc
+.pnpmrc
+.yarnrc.yml
+.envrc
+.direnv/
+.vercel/
+.netlify/
+.turbo/
+.cache/
+coverage/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
 .idea
 .DS_Store
 *.suo
