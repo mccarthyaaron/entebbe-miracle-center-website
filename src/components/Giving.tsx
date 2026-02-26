@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Button from './Button';
 
@@ -76,4 +78,3 @@ const Giving = () => {
 };
 
 export default Giving;
-

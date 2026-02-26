@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -7,15 +8,21 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Image Grid */}
           <div className="md:w-1/2 grid grid-cols-2 gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-              alt="Community" 
-              className="rounded-lg shadow-lg transform translate-y-8"
+            <Image
+              src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Community"
+              width={800}
+              height={1000}
+              sizes="(min-width: 768px) 25vw, 50vw"
+              className="w-full h-auto rounded-lg shadow-lg transform translate-y-8"
             />
-            <img 
-              src="https://images.unsplash.com/photo-1510590337019-5ef8d3d32116?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-              alt="Worship" 
-              className="rounded-lg shadow-lg"
+            <Image
+              src="https://images.unsplash.com/photo-1510590337019-5ef8d3d32116?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Worship"
+              width={800}
+              height={1000}
+              sizes="(min-width: 768px) 25vw, 50vw"
+              className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
 

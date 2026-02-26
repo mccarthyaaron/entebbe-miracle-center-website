@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Button from './Button';
 
 const Hero = () => {
@@ -6,10 +7,13 @@ const Hero = () => {
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-          alt="Worship Background" 
-          className="w-full h-full object-cover"
+        <Image
+          src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          alt="Worship Background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-black/60"></div>
       </div>

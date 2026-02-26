@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Image from 'next/image';
 
 const sermons = [
   {
@@ -50,10 +50,12 @@ const Sermons = () => {
               className="bg-secondary rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
             >
               <div className="relative h-52 overflow-hidden">
-                <img
+                <Image
                   src={sermon.image}
                   alt={sermon.alt}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
