@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 import type { ReactNode } from 'react';
 import './globals.css';
 
@@ -9,10 +9,10 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const playfairDisplay = Playfair_Display({
+const jetBrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-playfair',
+  variable: '--font-jetbrains-mono',
 });
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfairDisplay.variable}`}>
+      <body className={`${inter.variable} ${jetBrainsMono.variable}`}>
         {children}
       </body>
     </html>
